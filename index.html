@@ -9,8 +9,8 @@
 		<script type="text/javascript">
 	  
 		  function CalendarComponent(divID) {
-	
-	        // initialize variables
+		  
+		    // initialize variables
 	        
 		    // create a Date Object to hold today's date
 		    var todayDateObj = new Date();
@@ -31,7 +31,7 @@
 		    
 		    // define some arrays to use in translating month and day indexes into actual names
 		    var arrMonths = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
-	        var arrDaysOfTheWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+		    var arrDaysOfTheWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 		    
 		    var calendarPaneDiv;
 
@@ -66,7 +66,6 @@
 		      selectedDatePaneDiv.style.width = '215px';
 		      selectedDatePaneDiv.style.height = '220px';
 		      selectedDatePaneDiv.style.float = 'left';
-		      // selectedDatePaneDiv.style.borderRight = '5px solid black';
 		      selectedDatePaneDiv.style.borderRadius = '5px';
 		      selectedDatePaneDiv.style.overflow = 'hidden';
 		      selectedDatePaneDiv.style.zIndex = '4';
@@ -131,8 +130,8 @@
 		      selectedDateText.style.left = '50%';
 		      selectedDateText.style.marginRight = '-50%';
 		      selectedDateText.style.transform = 'translate(-50%, -50%)';
-			  selectedDateText.style.WebkitTransform = 'translate(-50%, -50%)';
-			  selectedDateText.style.color = 'black';
+		      selectedDateText.style.WebkitTransform = 'translate(-50%, -50%)';
+		      selectedDateText.style.color = 'black';
 		      selectedDateText.style.fontFamily = 'Arial';
 		      selectedDateText.style.fontWeight = 'bold';
 		      selectedDateText.style.fontSize = '120px';
@@ -185,8 +184,8 @@
 		        
 		        // cycle through the days of the week
 		        for (var j = 0; j < 7; j++) {
-
-                  // start building the opening <td> tag of the calendar cell
+		        
+		          // start building the opening <td> tag of the calendar cell
 		          calendarHTML = calendarHTML + '<td';
 		          
 		          // if the monthMapperDateObj's day of the week matches the current 
